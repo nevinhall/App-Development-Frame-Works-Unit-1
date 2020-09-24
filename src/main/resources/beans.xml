@@ -6,6 +6,20 @@
                   https://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- bean definitions and configurations go here -->
     <bean id="kerry" class="County">
-        <constructor-arg value="kerry"></constructor-arg>
+        <constructor-arg value="kerry"/>
+    </bean>
+
+    <bean id="DC Comics" class="Publisher">
+        <constructor-arg value="DC Comics"/>
+    </bean>
+
+    <bean id="Arrowverse" class="Franchise">
+        <constructor-arg value="Arrowverse"/>
+        <constructor-arg ref="DC Comics"/>
+    </bean>
+
+    <bean id="Justice league" class="Franchise">
+        <property name="franchiseName" value="Justice league"/>
+        <property name="publisherName" ref="DC Comics"/>
     </bean>
 </beans>
