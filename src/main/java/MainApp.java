@@ -1,6 +1,7 @@
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.core.ReactiveAdapterRegistry;
 
 @Slf4j
 public class MainApp {
@@ -17,6 +18,9 @@ public class MainApp {
 
         Franchise aw = (Franchise) context.getBean("Arrowverse");
         System.out.println(aw);
+
+        Franchise dcg = (Franchise) context.getBean("DC Super Hero Girls");
+        System.out.println(dcg);
 
         Hero b = (Hero) context.getBean("Batman");
         System.out.println(b);
@@ -35,6 +39,8 @@ public class MainApp {
 
         Hero bc = (Hero) context.getBean("Black Canary");
         System.out.println(bc);
+
+
 
 
 

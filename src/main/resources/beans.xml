@@ -9,18 +9,20 @@
         <constructor-arg value="kerry"/>
     </bean>
 
-    <bean id="DC Comics" class="Publisher">
+    <bean id="DC Comics" class="Publisher" >
         <constructor-arg value="DC Comics"/>
     </bean>
 
-    <bean id="Arrowverse" class="Franchise">
+    <bean id="Arrowverse" class="Franchise" autowire="byType" >
         <constructor-arg value="Arrowverse"/>
-        <constructor-arg ref="DC Comics"/>
     </bean>
 
-    <bean id="Justice league" class="Franchise">
+    <bean id="Justice league" class="Franchise" autowire="byType">
         <property name="franchiseName" value="Justice league"/>
-        <property name="publisherName" ref="DC Comics"/>
+    </bean>
+
+    <bean id="DC Super Hero Girls" class="Franchise" autowire="byType">
+        <property name="franchiseName" value="DC Super Hero Girls"/>
     </bean>
 
     <bean id="Black Canary" class="Hero">
