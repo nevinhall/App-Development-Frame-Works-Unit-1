@@ -18,6 +18,28 @@ public class MainApp {
         Franchise aw = (Franchise) context.getBean("Arrowverse");
         System.out.println(aw);
 
+        Hero b = (Hero) context.getBean("Batman");
+        System.out.println(b);
+
+        Hero a = (Hero) context.getBean("Aquaman");
+        System.out.println(a);
+
+        Hero w = (Hero) context.getBean("Wonder Woman");
+        System.out.println(w);
+
+        Hero g = (Hero) context.getBean("Green Arrow");
+        System.out.println(g);
+
+        Hero kf = (Hero) context.getBean("Killer Frost");
+        System.out.println(kf);
+
+        Hero bc = (Hero) context.getBean("Black Canary");
+        System.out.println(bc);
+
+
+
+
+
     }
 
 }

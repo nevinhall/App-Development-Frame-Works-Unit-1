@@ -22,4 +22,38 @@
         <property name="franchiseName" value="Justice league"/>
         <property name="publisherName" ref="DC Comics"/>
     </bean>
+
+    <bean id="Black Canary" class="Hero">
+        <constructor-arg value="Black Canary"/>
+        <constructor-arg ref="Arrowverse"/>
+    </bean>
+
+    <bean id="Killer Frost" class="Hero">
+        <constructor-arg value="Killer Frost"/>
+        <constructor-arg ref="Arrowverse"/>
+    </bean>
+
+    <bean id="Green Arrow" class="Hero">
+        <property name="heroName" value="Green Arrow"/>
+        <property name="franchiseName" ref="Arrowverse"/>
+    </bean>
+
+    <bean id="Wonder Woman" class="Hero">
+        <property name="heroName" value="Wonder Woman"/>
+        <property name="franchiseName" ref="Justice league"/>
+    </bean>
+
+    <bean id="Aquaman" class="Hero">
+        <constructor-arg value="Aquaman"/>
+        <constructor-arg ref="Justice league"/>
+    </bean>
+
+    <bean id="Batman" class="Hero">
+        <constructor-arg value="Batman"/>
+        <constructor-arg ref="Justice league"/>
+    </bean>
+
+
 </beans>
+
+
